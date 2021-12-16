@@ -1,0 +1,152 @@
+.nav-top {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 16px;
+  font-size: 0.75rem;
+  background-color: #fff;
+  color: #33475b;
+  font-family: "Avenir";
+}
+
+.logo-mobile {
+  display: none;
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+}
+
+.navbar-left ul,
+.navbar-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.navbar-right ul li {
+  margin-right: 20px;
+}
+
+.navbar-left ul li a,
+.navbar-right ul li a {
+  text-decoration: none;
+  padding: 4px;
+  border-radius: 8px;
+  color: #33475b;
+}
+
+.navbar-left ul li a:hover,
+.navbar-right ul li a:hover {
+  text-decoration: none;
+  color: #0091ae;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.globe-option {
+  margin-right: 24px;
+}
+
+.option:hover {
+  color: #0091ae;
+}
+
+.about-option {
+  margin-left: 24px;
+}
+
+.menu {
+  display: none;
+}
+
+header{
+    position: sticky;
+}
+
+.nav-bottom {
+  justify-content: space-around;
+  background-color: #fff;
+  color: #33475b;
+  font-family: "Avenir";
+  box-shadow: 0 2px 4px rgb(45 62 80 / 12%);
+  display: flex;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.second-left ul li {
+  margin-right: 24px;
+}
+
+.logo {
+  width: 100px;
+  margin-right: 24px;
+}
+
+.primary-button {
+  background-color: #ff7a59;
+  color: #fff;
+  border: 1px solid #ff7a59;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.title {
+  display: grid;
+  place-items: center;
+  padding: 20px 16px;
+  text-align: center;
+}
+
+h1 {
+  margin: 16px 0;
+  color: #33475b;
+  font-family: "Avenir-Black";
+  font-size: 32px;
+}
+
+h5 {
+  margin: 10px 0;
+  color: #33475b;
+  font-family: "Avenir-Black";
+  font-size: 20px;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 850px) {
+  .nav-top {
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgb(45 62 80 / 12%);
+    padding: 8px 16px;
+  }
+  .logo-mobile {
+    display: block;
+    width: 32px;
+  }
+  .navbar-left,
+  .navbar-right {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .nav-bottom {
+    display: none;
+  }
+}
