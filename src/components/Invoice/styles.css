@@ -1,0 +1,378 @@
+.invoice-container-global {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+  width: 100%;
+  margin: 0px auto;
+  padding: 6em 0px;
+  background-color: #f2f5f8;
+  overflow: hidden;
+}
+.invoice-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+  padding: 1.5em 3em;
+  color: #2d3e50;
+  border: 1px solid #f2f5f8;
+  border-radius: 0.2em;
+  background-color: #fff;
+  box-shadow: rgb(0 0 0 / 50%) 0px 0.5em 1.5em -0.5em;
+}
+.invoice-top {
+  display: flex;
+}
+.invoice-personal-info {
+  width: 100%;
+  height: 24em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+h2 {
+  font-size: 2rem;
+  line-height: 1.4em;
+  color: #33475b;
+  font-family: "Avenir-Black";
+}
+.input-title {
+  width: 100%;
+  font-size: 1.2em;
+  text-align: left;
+  color: #2d3e50;
+  outline: none;
+  border: 1px dashed transparent;
+  background-color: transparent;
+  overflow: visible;
+  font-family: "Avenir-Black";
+}
+.input-title::placeholder {
+  color: #7c98b6;
+}
+.input-title:hover {
+  border: 1px dashed #fd8f5f;
+}
+.input-subtitle {
+  width: 100%;
+  font-size: 0.9em;
+  text-align: left;
+  color: #2d3e50;
+  outline: none;
+  border: 1px dashed transparent;
+  background-color: transparent;
+  font-family: "Avenir-Light";
+}
+.input-subtitle::placeholder {
+  color: #7c98b6;
+}
+.input-subtitle:hover {
+  border: 1px dashed #fd8f5f;
+}
+.input-personal-info-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0px auto;
+}
+.input-personal-info-single {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.logo-date-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.logo-container {
+  position: relative;
+  width: 60%;
+  max-width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  overflow: hidden;
+  border: 2px dashed #fd8f5f;
+  padding: 4px 0;
+}
+.label-logo-container {
+  width: 40%;
+  font-size: 1em;
+  font-weight: 600;
+  text-align: center;
+  font-family: "Avenir";
+  line-height: 1.5em;
+}
+.input-logo {
+  position: absolute;
+  font-size: 10em;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.date-no-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.date-container-single {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.input-invoice-label {
+  width: 30%;
+  font-size: 1em;
+  text-align: right;
+  color: #2d3e50;
+  outline: none;
+  border: 1px dashed transparent;
+  background-color: transparent;
+  font-family: "Avenir";
+}
+.input-invoice-label:hover {
+  border: 1px dashed #fd8f5f;
+}
+.input-invoice {
+  width: 30%;
+  font-size: 1em;
+  text-align: right;
+  color: #2d3e50;
+  outline: none;
+  border: 1px dashed transparent;
+  background-color: transparent;
+  font-family: "Avenir";
+}
+.input-invoice::placeholder {
+  color: #7c98b6;
+}
+.input-invoice:hover {
+  border: 1px dashed #fd8f5f;
+}
+.date::placeholder {
+  color: #2d3e50;
+  font-family: "Avenir-Light";
+}
+.table-container {
+  display: flex;
+  flex-direction: column;
+  padding: 3em 0px;
+}
+.table {
+  position: relative;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.header-table {
+  font-size: 1em;
+  font-weight: 500;
+  text-align: left;
+  color: #fff;
+  background-color: #425b76;
+}
+th {
+  padding: 0.5em 0.9em;
+  text-align: left;
+}
+.th-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.input-header-table {
+  width: 100%;
+  font-size: 1em;
+  font-weight: 500;
+  text-align: left;
+  color: #fff;
+  outline: none;
+  border: 1px dashed transparent;
+  background-color: transparent;
+  overflow: visible;
+  font-family: "Avenir";
+}
+.input-header-table:hover {
+  border: 1px dashed #fd8f5f;
+}
+.input-table {
+  width: 100%;
+  font-size: 1em;
+  font-weight: 500;
+  text-align: left;
+  color: #2d3e50;
+  outline: none;
+  border: 1px dashed transparent;
+  background-color: transparent;
+  overflow: visible;
+  font-family: "Avenir";
+}
+.input-table:hover {
+  border: 1px dashed #fd8f5f;
+}
+td div {
+  position: relative;
+  padding: 1em;
+  overflow: hidden;
+}
+.comment-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 1em;
+  border: 1px solid #425b76;
+  border-radius: 0.5em;
+}
+.comment-container span {
+  font-size: 1em;
+  font-weight: 500;
+  text-align: center;
+  padding-bottom: 0.5em;
+  color: #425b76;
+  font-family: "Avenir";
+}
+.comment-container textarea {
+  max-width: 100%;
+  min-height: 2em;
+  display: flex;
+  resize: none;
+  font-size: 1em;
+  font-weight: 500;
+  border: 1px dashed transparent;
+  outline: none;
+  text-align: center;
+  font-family: "Avenir";
+}
+.comment-container textarea:hover {
+  border: 1px dashed #fd8f5f;
+}
+.total-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+  font-weight: 500;
+}
+.total-row-single {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.row-porcentaje {
+  position: relative;
+  display: flex;
+  width: 20%;
+}
+.row-porcentaje input:nth-child(1) {
+  width: 100%;
+  font-size: 1em;
+  font-weight: 500;
+  text-align: right;
+  color: #2d3e50;
+  outline: none;
+  border: 1px dashed transparent;
+  background-color: transparent;
+}
+.row-porcentaje span:nth-child(2) {
+  position: absolute;
+  left: 20%;
+  cursor: pointer;
+  transition: color 0.3s ease 0s;
+}
+.invoice-bottom {
+  display: flex;
+  width: 100%;
+}
+.total-row-single input {
+  width: 100%;
+  font-size: 1em;
+  font-weight: 500;
+  text-align: left;
+  color: #2d3e50;
+  outline: none;
+  border: 1px dashed transparent;
+  background-color: transparent;
+  overflow: visible;
+  font-family: "Avenir";
+}
+.total-row-single input:hover {
+  border: 1px dashed #fd8f5f;
+}
+.total-row-single span {
+  width: 100%;
+  font-size: 1em;
+  text-align: right;
+  color: #2d3e50;
+  font-family: "Avenir";
+}
+.line {
+  width: 100%;
+  height: 0.1em;
+  margin: 0.5em 0px;
+  background-color: #425b76;
+}
+.end-label-container {
+  width: 100%;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 3em;
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #7c98b6;
+}
+.end-label-container a {
+  padding-left: 0.3em;
+  color: #0091ae;
+  font-weight: 600;
+  text-decoration: none;
+}
+.comment-double-container {
+  width: 100%;
+  display: flex;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  align-items: normal;
+}
+.generate-button {
+  height: 48px;
+  position: absolute;
+  bottom: -80%;
+  right: 20%;
+  padding: 1em 2em;
+  cursor: pointer;
+}
+.edit-button {
+    height: 48px;
+    position: absolute;
+    bottom: -80%;
+    right: 40%;
+    padding: 1em 2em;
+    cursor: pointer;
+  }
+  .delete-button {
+    height: 48px;
+    position: absolute;
+    bottom: -80%;
+    right: 60%;
+    padding: 1em 2em;
+    cursor: pointer;
+  }

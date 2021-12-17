@@ -5,6 +5,7 @@ import { RiGlobeFill, RiMenu5Line } from "react-icons/ri";
 import { TiUser } from "react-icons/ti";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import "./styles.css";
+import Invoice from "../Invoice";
 
 export default function Header() {
   return (
@@ -97,6 +98,7 @@ export default function Header() {
           a professional invoice for your customers.
         </h5>
       </div>
+      <Invoice />
     </div>
   );
 }

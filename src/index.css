@@ -21,3 +21,8 @@ code {
   font-family: 'Avenir-Black';
   src: local('AvenirLTStd-Black'), url(./assets/fonts/AvenirLTStd-Black.otf);
 }
+
+@font-face {
+  font-family: 'Avenir-Light';
+  src: local('AvenirLTStd-Book'), url(./assets/fonts/AvenirLTStd-Book.otf);
+}
