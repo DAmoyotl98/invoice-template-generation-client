@@ -1,16 +1,15 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Invoice from "../components/Invoice";
 
 const Main = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Invoice />} />
-        <Route path="/:id" element={<Invoice />} />
-        <Route path="/edit/:id" element={<Invoice />} />
-      </Routes>
-    </BrowserRouter>
+    <Router>
+      <Switch>
+        <Route path="/invoice/:id"><Invoice></Invoice></Route>
+        <Route  path="/"><Invoice></Invoice></Route>
+      </Switch>
+    </Router>
   );
 };
 

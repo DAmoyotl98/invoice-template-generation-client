@@ -1,5 +1,5 @@
 import { React, useState, useEffect } from "react";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "./styles.css";
 
 import Header from "../Header/index";
@@ -12,7 +12,7 @@ const Invoice = () => {
   const { id } = useParams();
 
   //Variable para cambiar de pantalla
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
 
   //Variables para tabla userCompany - User
   const [userCompany, setUserCompany] = useState("");
@@ -280,7 +280,8 @@ const Invoice = () => {
         if (!responseJson.error) {
           console.log(responseJson);
           //Recargar página con id de invoice
-          navigate(`/${responseJson._id}`);
+          window.open(`https://lit-forest-43463.herokuapp.com/#/invoice/${responseJson._id}`);
+          //navigate(`/${responseJson._id}`);
           window.location.reload();
         } else {
           console.log("Hubo un error la consulta.");
@@ -365,7 +366,7 @@ const Invoice = () => {
       .then((response) => response.json())
       .then(async (responseJson) => {
         if (!responseJson.error) {
-          navigate(`/`);
+          window.open(`https://lit-forest-43463.herokuapp.com/#/`);
           window.location.reload();
         } else {
           console.log("Hubo un error la consulta.");
@@ -491,7 +492,8 @@ const Invoice = () => {
       .then((response) => response.json())
       .then(async (responseJson) => {
         if (!responseJson.error) {
-          navigate(`/${responseJson._id}`);
+          window.open(`https://lit-forest-43463.herokuapp.com/#/invoice/${responseJson._id}`);
+          //navigate(`/${responseJson._id}`);
           window.location.reload();
         } else {
           console.log("Hubo un error la consulta.");
