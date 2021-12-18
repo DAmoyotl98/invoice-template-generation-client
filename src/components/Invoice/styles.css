@@ -218,8 +218,17 @@ th {
   overflow: visible;
   font-family: "Avenir";
 }
+.input-table::placeholder{
+  color: #7c98b6;
+}
 .input-table:hover {
   border: 1px dashed #fd8f5f;
+}
+.quantity{
+  text-align: center;
+}
+.price{
+  text-align: center;
 }
 td div {
   position: relative;
@@ -286,10 +295,8 @@ td div {
   background-color: transparent;
 }
 .row-porcentaje span:nth-child(2) {
-  position: absolute;
-  left: 20%;
   cursor: pointer;
-  transition: color 0.3s ease 0s;
+  width: fit-content;
 }
 .invoice-bottom {
   display: flex;
@@ -315,7 +322,7 @@ td div {
   font-size: 1em;
   text-align: right;
   color: #2d3e50;
-  font-family: "Avenir";
+  font-family: "Avenir-Black";
 }
 .line {
   width: 100%;

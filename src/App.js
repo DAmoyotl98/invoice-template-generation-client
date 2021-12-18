@@ -1,9 +1,8 @@
-import Header from "./components/Header";
-import Invoice from "./components/Invoice";
+import Main from './routes/Main'
 
 function App() {
   return (
-    <Header/>
+    <Main/>
   );
 }
 
